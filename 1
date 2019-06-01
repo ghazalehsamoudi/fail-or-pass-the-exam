@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	int counter=0;
+	int score;
+	int sum;
+	float ave;
+	while(counter<5){
+		cout<<"enter your score";
+		cin>>score;
+		sum+=score;
+		++counter;
+	}
+	ave=(float)sum/5;
+	cout<<"your ave is="<<ave<<endl;
+	if(ave>=0 && ave<12)
+	    cout<<"you are fail";
+	else
+	    cout<<"you are pass the semester";
+}
